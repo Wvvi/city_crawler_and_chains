@@ -1,5 +1,3 @@
-# city_crawler_and_chains
-
 # 城市爬虫与接龙#
 
 * 运行环境: python3，需要第三方库BeautifulSoup4
@@ -95,8 +93,6 @@
 
   2. 爬取城市代码运行后会自动在当前文件目录下创建city_where.txt，爬取的数据存放在里面
 
-     ![屏幕截图(118)](C:\Users\Wvv\Pictures\Screenshots\屏幕截图(118).png)
-
   3. District.py文件为提取city_where.txt文件里的城市名代码，主要是对city_where.txt文件的清洗
 
      ~~~python
@@ -136,8 +132,6 @@
      ​
 
   4. District.py文件运行后会自动再当前目录下自动创建district.txt
-
-     ![屏幕截图(119)](C:\Users\Wvv\Pictures\Screenshots\屏幕截图(119).png)
 
   5. city_chains.py文件为城市接龙代码
 
@@ -233,11 +227,7 @@
   6. 额外数据文件：
      * unicode_pinyin.txt文件，文件中列有从4E00-9FA5标准汉字的Unicode编码所对应的拼音，外加一个落单的3007编码的“〇”。（首先将汉字转为Unicode编码，再通过查询这个匹配文件去获得该汉字的拼音）
 
-       ![屏幕截图(121)](C:\Users\Wvv\Pictures\Screenshots\屏幕截图(121).png)
-
      * csm_new.txt文件，由于爬取的城市数据缺少谐音接龙的城市名，这是用于验证谐音城市名接龙的文件
-
-       ![屏幕截图(120)](C:\Users\Wvv\Pictures\Screenshots\屏幕截图(120).png)
 
 * 自动运行全部的脚本文件run_all.py：
 
@@ -266,8 +256,5 @@
 
   * 先运行city_crawler.py文件;接着运行District.py文件;最后运行city_chains.py文件
 
-* 程序测试结果：
-
-  ![屏幕截图(117)](C:\Users\Wvv\Pictures\Screenshots\屏幕截图(117).png)
 
 
